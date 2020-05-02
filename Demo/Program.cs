@@ -31,10 +31,13 @@ namespace Demo
                     obj.AddMultipleNumbers();
                     break;
                 case 3:
-                    System.Console.WriteLine("Constrution in proess");
+                    System.Console.WriteLine("Enter Numbers to be substracted");
+                    int number3 = Convert.ToInt32(Console.ReadLine());
+                    int number4 = Convert.ToInt32(Console.ReadLine());
+                    System.Console.WriteLine(number3- number4);
                     break;
                 case 4:
-                    System.Console.WriteLine("Under Constrution");
+                    obj.SubstractMultipleNumbers();
                     break;
                 case 5:
                     break;
@@ -68,6 +71,28 @@ namespace Demo
                     break;
                 }
                 sum = sum + Convert.ToInt32(newInput);
+                System.Console.WriteLine(sum);
+            } while (i == 1);
+        }
+
+        public void SubstractMultipleNumbers()
+        {
+            System.Console.WriteLine("Enter first two Numbers to be substracted");
+            int i = 1;
+            int number1 = Convert.ToInt32(Console.ReadLine());
+            int number2 = Convert.ToInt32(Console.ReadLine());
+            int sum = number1 - number2;
+            System.Console.WriteLine(sum);
+            do
+            {
+                System.Console.WriteLine("do you still want to add number:if yes enter number to be substracted" +
+                                         "or to end type (N/n)");
+                var newInput = Console.ReadLine();
+                if (newInput == "N" || newInput == "n")
+                {
+                    break;
+                }
+                sum = sum - Convert.ToInt32(newInput);
                 System.Console.WriteLine(sum);
             } while (i == 1);
         }
