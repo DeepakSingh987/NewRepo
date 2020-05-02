@@ -23,9 +23,9 @@ namespace Demo
 
                 case 1:
                     System.Console.WriteLine("Enter Numbers to be added");
-                    int number1 = Convert.ToInt32(Console.ReadLine());
+                    int number = Convert.ToInt32(Console.ReadLine());
                     int number2 = Convert.ToInt32(Console.ReadLine());
-                    obj.AddTwoNumbers(number1, number2);
+                    obj.AddTwoNumbers(number, number2);
                     break;
                 case 2:
                     obj.AddMultipleNumbers();
