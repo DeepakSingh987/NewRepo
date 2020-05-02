@@ -40,6 +40,10 @@ namespace Demo
                     obj.SubstractMultipleNumbers();
                     break;
                 case 5:
+                    System.Console.WriteLine("Enter Numbers to be muliplied");
+                    int number5 = Convert.ToInt32(Console.ReadLine());
+                    int number6 = Convert.ToInt32(Console.ReadLine());
+                    System.Console.WriteLine(number5 * number6);
                     break;
                 default:
                     Console.Write("Input correct option\n");
